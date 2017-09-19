@@ -1,0 +1,274 @@
+*, html, body {
+  font-size: 18px;
+  line-height: 1.4;
+  font-family: Helvetica;
+
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+div {
+  display: block;
+}
+
+/* Header */
+
+header {
+  background-image: url("../images/glasses-bg.png");
+  height: 30rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 1rem;
+}
+
+nav {
+  background-color: cadetblue;
+  color: white;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+nav img {
+  padding-left: 2rem;
+  padding-right: 1rem;
+  height: 1.5rem;
+}
+
+nav span {
+  flex-grow: 1;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 2rem;
+}
+
+.menu {
+  display: none;
+}
+
+.hero-flex-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hero {
+  background-color: white;
+  margin-top: 10rem;
+  margin-right: -2rem;
+  padding: 1.5rem 5rem;
+}
+
+.hero span {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+text-transform: uppercase;
+}
+
+/* Content */
+
+/* Highlights */
+
+.highlights {
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+height: 8rem;
+}
+
+.exams {
+  width: 3.5rem;
+}
+
+.fittings {
+  width: 5rem;
+}
+
+.delivery {
+  width: 5rem;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 6rem;
+}
+
+.item img{
+  width: 3.5rem;
+}
+
+.item span {
+  text-align: center;
+}
+
+/* Philosophy & Appointments */
+
+.elements {
+  display: flex;
+  justify-content: center;
+}
+
+.element {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 35%;
+  padding-left: 5%;
+  padding-bottom: 5rem;
+}
+
+.element span {
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: uppercase;
+  background-color: cadetblue;
+  color: white;
+  padding: 0.5rem 1.25rem;
+  width: 10rem;
+}
+
+.element p {
+  text-align: justify;
+}
+
+
+/* Footer */
+
+footer {
+  display: inline-flex;
+  text-align: left;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  padding-left: 4rem;
+}
+
+footer img {
+  padding-right: 1rem;
+  height: 1.5rem;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 1024px) {
+
+  .container {
+    width: 100%;
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+  }
+
+  header {
+    height: 22rem;
+  }
+
+  .hero {
+    background-color: white;
+    margin-top: 5rem;
+    margin-right: 2rem;
+    padding: 0.75rem 4rem;
+  }
+
+  .hero span {
+
+    font-size: 1.33rem;
+  }
+}
+
+
+@media only screen and (max-width: 470px) {
+
+  .container {
+    width: 100%;
+  }
+
+  header {
+    background-position: 20%;
+    height: 17rem;
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  nav ul li {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 2rem;
+}
+
+  .hero {
+    background-color: white;
+    margin-top: 9rem;
+    padding: 1rem 4rem;
+  }
+
+  .hero span {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .highlights {
+    display: flex;
+    justify-content: center;
+    padding: 3.77rem;
+  }
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1.54rem;
+  }
+
+  .item span {
+    font-size: 0.77rem;
+    text-align: center;
+  }
+
+
+  .element {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 35%;
+    padding-left: 5%;
+    padding-bottom: 4rem;
+  }
+
+  .element p {
+    text-align: justify;
+    font-size: 0.77rem;
+    padding-top: 1rem;
+  }
+
+
+
+
+}
